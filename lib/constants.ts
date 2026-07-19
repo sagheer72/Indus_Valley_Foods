@@ -5,21 +5,21 @@ export const COMPANY = {
   name: 'Indus Valley Foods',
   owner: 'Sagheer Ahmed',
   location: 'Karachi, Pakistan',
-  locationDetail: 'Near Karachi Port & Port Qasim',
-  phoneDisplay: '+92 308 2080455',
-  phoneHref: 'tel:+923082080455',
-  whatsappNumber: '923082080455',
+  locationDetail: 'Shipping & Corporate Operations Hub — Karachi Port, Pakistan',
+  phoneDisplay: '+92 312 3059907',
+  phoneHref: 'tel:+923123059907',
+  whatsappNumber: '923123059907',
   get whatsappHref() {
     return `https://wa.me/${this.whatsappNumber}`;
   },
   whatsappHrefWithText: (text: string) =>
-    `https://wa.me/923082080455?text=${encodeURIComponent(text)}`,
-  email: 'sagheerahmed123465@gmail.com',
+    `https://wa.me/923123059907?text=${encodeURIComponent(text)}`,
+  email: 'indusvalleyfoods.pk@gmail.com',
   get emailHref() {
     return `mailto:${this.email}`;
   },
   emailHrefWithSubject: (subject: string) =>
-    `mailto:sagheerahmed123465@gmail.com?subject=${encodeURIComponent(subject)}`,
+    `mailto:indusvalleyfoods.pk@gmail.com?subject=${encodeURIComponent(subject)}`,
 };
 
 export const NAV_LINKS = [

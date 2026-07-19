@@ -134,8 +134,8 @@ const organizationSchema = {
     {
       '@type': 'ContactPoint',
       contactType: 'sales',
-      telephone: '+92-308-2080455',
-      email: 'sagheerahmed123465@gmail.com',
+      telephone: '+92-312-3059907',
+      email: 'indusvalleyfoods.pk@gmail.com',
       areaServed: ['AE', 'SA', 'QA', 'KW', 'OM', 'BH', 'PK'],
       availableLanguage: ['English', 'Urdu', 'Arabic'],
     },
@@ -163,8 +163,8 @@ const localBusinessSchema = {
     latitude: 24.8607,
     longitude: 67.0011,
   },
-  telephone: '+92-308-2080455',
-  email: 'sagheerahmed123465@gmail.com',
+  telephone: '+92-312-3059907',
+  email: 'indusvalleyfoods.pk@gmail.com',
   url: SITE_URL,
   openingHoursSpecification: [
     {
