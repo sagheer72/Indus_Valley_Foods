@@ -62,7 +62,7 @@ export default async function OpengraphImage() {
             maxWidth: 820,
           }}
         >
-          Exported from Pakistan to UAE, Saudi Arabia, Qatar &amp; the Gulf
+          Exported from Pakistan to the Gulf, Europe &amp; Worldwide
         </div>
 
         <div

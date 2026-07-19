@@ -46,11 +46,11 @@ export default function ProductShowcase() {
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-2 lg:gap-8">
           {/* CARD 1: RICE */}
-          <article className="group relative overflow-hidden rounded-2xl border border-emerald-950/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-emerald-950/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="relative h-56 w-full overflow-hidden sm:h-64">
               <Image
                 src="https://images.unsplash.com/photo-1586201375761-83865001e31c?fm=jpg&q=80&w=1200&auto=format&fit=crop"
-                alt="Premium long-grain Super Kernel and 1121 Basmati rice from Pakistan, Sortex-cleaned for bulk export to Dubai and Gulf markets"
+                alt="Premium long-grain Super Kernel and 1121 Basmati rice from Pakistan, Sortex-cleaned for worldwide bulk export including Dubai and Gulf markets"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -66,14 +66,14 @@ export default function ProductShowcase() {
               </div>
             </div>
 
-            <div className="p-6 sm:p-8">
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <h3 className="text-2xl font-serif font-bold text-emerald-950 sm:text-3xl">
                 Premium Pakistani Basmati Rice
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
                 Sortex-cleaned Super Kernel and 1121 Basmati, plus IRRI-6 long
                 grain, milled to strict export specification for global food
-                procurement teams across the Gulf.
+                procurement teams worldwide.
               </p>
 
               <div className="mt-6 grid grid-cols-2 gap-3">
@@ -101,7 +101,7 @@ export default function ProductShowcase() {
 
               <a
                 href="#contact"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-950 py-3.5 text-sm font-semibold text-white hover:bg-emerald-900 active:scale-[0.98] transition-all duration-200"
+                className="mt-auto pt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-950 py-3.5 text-sm font-semibold text-white hover:bg-emerald-900 active:scale-[0.98] transition-all duration-200"
               >
                 Inquire Now
                 <ArrowRight
@@ -113,11 +113,11 @@ export default function ProductShowcase() {
           </article>
 
           {/* CARD 2: SALT */}
-          <article className="group relative overflow-hidden rounded-2xl border border-emerald-950/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+          <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-emerald-950/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="relative h-56 w-full overflow-hidden sm:h-64">
               <Image
                 src="https://images.unsplash.com/photo-1629285464605-8e6493153fdb?fm=jpg&q=80&w=1200&auto=format&fit=crop"
-                alt="Authentic Himalayan pink salt crystals from Pakistan, 100% organic and hand-mined for bulk export to Saudi Arabia and the Gulf"
+                alt="Authentic Himalayan pink salt crystals from Pakistan, 100% organic and hand-mined for worldwide bulk export including Saudi Arabia and the Gulf"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -133,7 +133,7 @@ export default function ProductShowcase() {
               </div>
             </div>
 
-            <div className="p-6 sm:p-8">
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <h3 className="text-2xl font-serif font-bold text-emerald-950 sm:text-3xl">
                 Verified Himalayan Pink Salt
               </h3>
@@ -167,7 +167,7 @@ export default function ProductShowcase() {
 
               <a
                 href="#contact"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-950 py-3.5 text-sm font-semibold text-white hover:bg-emerald-900 active:scale-[0.98] transition-all duration-200"
+                className="mt-auto pt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-950 py-3.5 text-sm font-semibold text-white hover:bg-emerald-900 active:scale-[0.98] transition-all duration-200"
               >
                 Inquire Now
                 <ArrowRight

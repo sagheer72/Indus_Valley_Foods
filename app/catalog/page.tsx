@@ -220,7 +220,7 @@ export default function CatalogPage() {
               <h4 className="mt-4 text-base font-semibold text-white">Shipping Terms</h4>
               <p className="mt-2 text-sm text-emerald-200/60">
                 FOB Karachi Port, or CIF to any global port — with particular
-                experience across Gulf and UAE routes.
+                experience across Gulf, European, and worldwide shipping routes.
               </p>
             </div>
             <div className="bg-emerald-950 p-7">

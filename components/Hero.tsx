@@ -24,14 +24,15 @@ export default function Hero() {
           <h1 className="text-4xl font-serif font-bold leading-[1.08] text-white sm:text-5xl lg:text-6xl xl:text-[64px]">
             Direct Basmati Rice &amp; Himalayan Pink Salt,{' '}
             <span className="text-amber-400 italic">Exported from Pakistan</span> to
-            the Gulf.
+            the World.
           </h1>
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-emerald-100/80 sm:text-lg lg:mx-0">
             Indus Valley Foods is a Karachi-based direct exporter supplying
             internationally certified, Sortex-cleaned Basmati rice and pure
-            Himalayan pink salt to importers across the UAE, Saudi Arabia, Qatar
-            and the wider Gulf — on flexible FOB and CIF terms.
+            Himalayan pink salt to importers worldwide — including the UAE,
+            Saudi Arabia, Europe, Africa, and beyond — on flexible FOB and CIF
+            terms.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">

@@ -12,7 +12,7 @@ const faqs = [
   {
     question: 'What shipping terms do you offer — FOB or CIF?',
     answer:
-      'We offer both FOB (Karachi Port) and CIF to any global port, with particular experience shipping to the UAE, Saudi Arabia, Qatar, and the wider Gulf region.',
+      'We offer both FOB (Karachi Port) and CIF to any global port. We ship worldwide, with particular experience across the UAE, Saudi Arabia, Qatar, Europe, and Africa.',
   },
   {
     question: 'What payment methods do you accept for export orders?',

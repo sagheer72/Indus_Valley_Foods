@@ -22,20 +22,23 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      'Indus Valley Foods | Direct Basmati Rice & Himalayan Pink Salt Exporter from Pakistan to Dubai, Saudi Arabia & Gulf',
+      'Indus Valley Foods | Direct Basmati Rice & Himalayan Pink Salt Exporter from Pakistan — Worldwide Shipping',
     template: '%s | Indus Valley Foods',
   },
   description:
-    'Indus Valley Foods is a direct exporter of Sortex-cleaned Super Kernel & 1121 Basmati rice and verified Himalayan pink salt from Karachi, Pakistan to UAE, Saudi Arabia, Qatar and the wider Gulf. FOB/CIF terms, bulk container supply, free samples via DHL/FedEx.',
+    'Indus Valley Foods is a direct exporter of Sortex-cleaned Super Kernel & 1121 Basmati rice and verified Himalayan pink salt from Karachi, Pakistan, shipping worldwide — including UAE, Saudi Arabia, Qatar, Europe, Africa, Central Asia, and the Americas. FOB/CIF terms, bulk container supply, free samples via DHL/FedEx.',
   keywords: [
+    'Pakistan rice exporter worldwide',
+    'Basmati rice international export',
     'Direct Basmati Rice Exporters from Pakistan to Dubai',
     'Verified Pakistan Himalayan Pink Salt Suppliers Saudi Arabia',
     'Bulk Agro Commodities Exporter Pakistan',
+    'Global agro commodities exporter Pakistan',
     'Indus Valley Foods Pakistan',
     'Basmati rice exporter Karachi',
-    'Pakistan rice supplier Gulf',
-    'Himalayan pink salt bulk exporter',
-    'Rice exporter UAE Qatar Kuwait',
+    'Pakistan rice supplier Gulf Europe Africa',
+    'Himalayan pink salt bulk exporter worldwide',
+    'Rice exporter UAE Qatar Kuwait Europe USA',
     'FOB CIF rice export Pakistan',
   ],
   authors: [{ name: 'Sagheer Ahmed', url: SITE_URL }],
@@ -46,9 +49,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      'Indus Valley Foods | Direct Pakistani Rice & Pink Salt Exporter to the Gulf',
+      'Indus Valley Foods | Direct Pakistani Rice & Pink Salt Exporter — Worldwide Shipping',
     description:
-      'Sortex-cleaned Basmati rice and authentic Himalayan pink salt, exported directly from Karachi, Pakistan to UAE, Saudi Arabia and Qatar on FOB/CIF terms.',
+      'Sortex-cleaned Basmati rice and authentic Himalayan pink salt, exported directly from Karachi, Pakistan to buyers worldwide on FOB/CIF terms.',
     url: SITE_URL,
     siteName: 'Indus Valley Foods',
     locale: 'en_US',
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Indus Valley Foods | Direct Pakistani Rice & Pink Salt Exporter',
     description:
-      'Direct exporter of Basmati rice and Himalayan pink salt from Karachi, Pakistan to the Gulf. FOB/CIF terms, bulk supply.',
+      'Direct exporter of Basmati rice and Himalayan pink salt from Karachi, Pakistan, shipping worldwide. FOB/CIF terms, bulk supply.',
   },
   robots: {
     index: true,
@@ -86,7 +89,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/icon.svg`,
   description:
-    'Direct exporter of Sortex-cleaned Basmati rice and authentic Himalayan pink salt from Karachi, Pakistan, supplying wholesale and bulk buyers across the UAE, Saudi Arabia, Qatar, and the wider Gulf region on FOB and CIF terms.',
+    'Direct exporter of Sortex-cleaned Basmati rice and authentic Himalayan pink salt from Karachi, Pakistan, supplying wholesale and bulk buyers worldwide — including the UAE, Saudi Arabia, Qatar, Europe, Africa, and beyond — on FOB and CIF terms.',
   foundingLocation: {
     '@type': 'Place',
     address: {
@@ -114,6 +117,12 @@ const organizationSchema = {
     { '@type': 'Country', name: 'Kuwait' },
     { '@type': 'Country', name: 'Oman' },
     { '@type': 'Country', name: 'Bahrain' },
+    { '@type': 'Country', name: 'United Kingdom' },
+    { '@type': 'Country', name: 'Germany' },
+    { '@type': 'Country', name: 'United States' },
+    { '@type': 'Country', name: 'China' },
+    { '@type': 'Country', name: 'South Africa' },
+    { '@type': 'Place', name: 'Worldwide' },
   ],
   founder: {
     '@type': 'Person',
@@ -139,7 +148,7 @@ const localBusinessSchema = {
   name: 'Indus Valley Foods',
   image: `${SITE_URL}/opengraph-image`,
   description:
-    'Direct exporter of Sortex-cleaned Basmati rice and Himalayan pink salt based in Karachi, Pakistan, serving wholesale and bulk buyers across the Gulf.',
+    'Direct exporter of Sortex-cleaned Basmati rice and Himalayan pink salt based in Karachi, Pakistan, serving wholesale and bulk buyers worldwide.',
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
