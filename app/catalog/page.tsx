@@ -110,17 +110,19 @@ export default function CatalogPage() {
                 Packing Options
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">
-                {['1KG Pouch', '2KG Pouch', '5KG Pouch', '25KG PP / Jute', '50KG PP / Jute'].map(
-                  (item) => (
-                    <span
-                      key={item}
-                      className="rounded-full border border-emerald-200 px-3 py-1.5 text-xs font-mono text-emerald-800"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
+                {['5KG', '10KG', '20KG', '25KG', '50KG'].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-emerald-200 px-3 py-1.5 text-xs font-mono text-emerald-800"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
+              <p className="mt-3 text-xs text-slate-500">
+                PP Bags, Jute Bags, or Non-Woven / Cotton Bags — custom brand
+                printing available for private label orders.
+              </p>
             </div>
 
             <div className="rounded-2xl bg-emerald-950 p-6 sm:p-8">
@@ -129,13 +131,14 @@ export default function CatalogPage() {
                   Spec Sheet
                 </span>
                 <span className="rounded-full bg-amber-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-950">
-                  Verified
+                  Export Grade
                 </span>
               </div>
-              <ManifestRow label="Cleaning" value="100% Sortex Cleaned" />
-              <ManifestRow label="Avg. Grain Length" value="8.35mm +" />
-              <ManifestRow label="Moisture" value="Below 12.5%" />
-              <ManifestRow label="Milling" value="Well-Milled, Double Polished" />
+              <ManifestRow label="AGL — Super Kernel Basmati" value="7.2mm – 7.4mm" />
+              <ManifestRow label="AGL — IRRI-9 Non-Basmati" value="6.0mm – 6.2mm" />
+              <ManifestRow label="Broken %" value="2% – 5% Max (per buyer requirement)" />
+              <ManifestRow label="Moisture" value="13% Max" />
+              <ManifestRow label="Milling" value="Well-Milled, Double Polished, Sortex Cleaned" />
             </div>
           </div>
         </div>
@@ -158,13 +161,13 @@ export default function CatalogPage() {
                   Spec Sheet
                 </span>
                 <span className="rounded-full bg-amber-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-950">
-                  Verified
+                  Export Grade
                 </span>
               </div>
-              <ManifestRow label="Sourcing" value="100% Organic, Hand-Mined" />
-              <ManifestRow label="Grade" value="Certified Food Grade" />
-              <ManifestRow label="Mineral Content" value="84+ Trace Minerals" />
-              <ManifestRow label="Origin" value="Salt Range, Punjab" />
+              <ManifestRow label="Purity (NaCl)" value="98% – 99%" />
+              <ManifestRow label="Color" value="Premium Light Pink / Dark Pink" />
+              <ManifestRow label="Forms" value="Coarse Granules, Fine Powder, Lumps" />
+              <ManifestRow label="Origin" value="Salt Range, Punjab, Pakistan" />
             </div>
 
             <div className="order-1 lg:order-2">
@@ -173,20 +176,16 @@ export default function CatalogPage() {
               </h3>
               <div className="mt-4 flex flex-col divide-y divide-slate-200 border-y border-slate-200">
                 <div className="flex items-center justify-between py-3.5">
-                  <span className="text-sm font-medium text-slate-800">Extra Fine Powder</span>
+                  <span className="text-sm font-medium text-slate-800">Fine Powder</span>
                   <span className="text-xs font-mono text-emerald-700">TABLE / SEASONING</span>
                 </div>
                 <div className="flex items-center justify-between py-3.5">
-                  <span className="text-sm font-medium text-slate-800">Medium Granules — 1–2mm</span>
+                  <span className="text-sm font-medium text-slate-800">Coarse Granules</span>
                   <span className="text-xs font-mono text-emerald-700">COOKING</span>
                 </div>
                 <div className="flex items-center justify-between py-3.5">
-                  <span className="text-sm font-medium text-slate-800">Medium Granules — 2–5mm</span>
+                  <span className="text-sm font-medium text-slate-800">Lumps</span>
                   <span className="text-xs font-mono text-emerald-700">GRINDER / MILL FILL</span>
-                </div>
-                <div className="flex items-center justify-between py-3.5">
-                  <span className="text-sm font-medium text-slate-800">Cooking Blocks / Tiles</span>
-                  <span className="text-xs font-mono text-emerald-700">GRILL &amp; SERVING</span>
                 </div>
               </div>
 
@@ -194,7 +193,7 @@ export default function CatalogPage() {
                 Packing Options
               </h3>
               <div className="mt-4 flex flex-wrap gap-2">
-                {['500g Pouch', '1KG Pouch', '25KG Bulk Laminate Bag'].map((item) => (
+                {['5KG', '10KG', '20KG', '25KG', '50KG'].map((item) => (
                   <span
                     key={item}
                     className="rounded-full border border-emerald-200 px-3 py-1.5 text-xs font-mono text-emerald-800"
@@ -203,6 +202,10 @@ export default function CatalogPage() {
                   </span>
                 ))}
               </div>
+              <p className="mt-3 text-xs text-slate-500">
+                PP Bags, Jute Bags, or Non-Woven / Cotton Bags — custom brand
+                printing available for private label orders.
+              </p>
             </div>
           </div>
         </div>

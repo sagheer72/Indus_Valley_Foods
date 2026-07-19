@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Phone, Mail, Globe } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe, Anchor } from 'lucide-react';
 import { COMPANY, NAV_LINKS } from '@/lib/constants';
 
 export default function Footer() {
@@ -16,6 +16,10 @@ export default function Footer() {
             <div className="mt-6 flex items-center gap-2 text-sm text-emerald-200/70">
               <MapPin className="h-4 w-4 flex-shrink-0 text-amber-400" strokeWidth={2} />
               {COMPANY.locationDetail}
+            </div>
+            <div className="mt-2 flex items-center gap-2 text-sm text-emerald-200/70">
+              <Anchor className="h-4 w-4 flex-shrink-0 text-amber-400" strokeWidth={2} />
+              Country of Origin: Pakistan — Loading Ports: Karachi Port / Port Qasim
             </div>
           </div>
 
@@ -42,10 +46,10 @@ export default function Footer() {
               Products
             </h5>
             <ul className="mt-5 flex flex-col gap-3">
-              <li className="text-sm text-emerald-200/70">1121 Basmati Rice</li>
-              <li className="text-sm text-emerald-200/70">IRRI-6 Long Grain</li>
+              <li className="text-sm text-emerald-200/70">Super Kernel Basmati Rice</li>
+              <li className="text-sm text-emerald-200/70">IRRI-9 Non-Basmati Rice</li>
               <li className="text-sm text-emerald-200/70">Himalayan Pink Salt</li>
-              <li className="text-sm text-emerald-200/70">Cooking Salt Blocks</li>
+              <li className="text-sm text-emerald-200/70">Salt Lumps & Granules</li>
             </ul>
           </div>
 

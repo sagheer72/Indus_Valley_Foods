@@ -25,9 +25,9 @@ const faqs = [
       'We export Super Kernel Basmati, 1121 Basmati (White, Sella, and Steam), and IRRI-6 long grain rice, all Sortex-cleaned and moisture-controlled to export specification.',
   },
   {
-    question: 'Is your Himalayan pink salt certified food grade?',
+    question: 'What quality standard is your Himalayan pink salt supplied to?',
     answer:
-      'Yes, our Himalayan pink salt is 100% organic, hand-mined, and supplied to certified food-grade quality standards in fine powder, granule, or cooking block form.',
+      'Our Himalayan pink salt is hand-mined and supplied to a 98–99% NaCl purity standard, in fine powder, coarse granule, or lump form, ready for buyer-side quality verification via free sample.',
   },
 ];
 

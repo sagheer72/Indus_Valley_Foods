@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ProductShowcase from '@/components/ProductShowcase';
+import AboutSection from '@/components/AboutSection';
 import MarketsSection from '@/components/MarketsSection';
 import ExportProcess from '@/components/ExportProcess';
 import TrustBar from '@/components/TrustBar';
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ProductShowcase />
+      <AboutSection />
       <MarketsSection />
       <ExportProcess />
       <TrustBar />

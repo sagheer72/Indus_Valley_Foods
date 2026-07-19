@@ -1,15 +1,15 @@
 import { PackageCheck, ShieldCheck, Ship, Boxes } from 'lucide-react';
 
 const packagingOptions = [
-  { label: 'Retail', detail: '1kg / 2kg / 5kg laminated pouches — private label & custom branding available' },
-  { label: 'Wholesale', detail: '25kg / 50kg PP woven bags or Jute bags' },
-  { label: 'Bulk', detail: 'Flexi-bags or full container bulk loading on request' },
+  { label: 'Standard Sizes', detail: '5kg, 10kg, 20kg, 25kg & 50kg bags available for both products' },
+  { label: 'Materials', detail: 'PP Bags, Jute Bags, or Non-Woven / Cotton Bags' },
+  { label: 'Private Label', detail: 'Custom brand printing available per buyer requirement' },
 ];
 
 const qcSteps = [
   { step: '01', title: 'Sourcing & Grading', detail: 'Raw material sourced directly and graded before acceptance.' },
   { step: '02', title: 'Sortex Cleaning', detail: 'Electronic color sorting removes discolored and foreign grains.' },
-  { step: '03', title: 'Moisture Testing', detail: 'Every batch tested to stay strictly below 12.5% moisture.' },
+  { step: '03', title: 'Moisture Testing', detail: 'Every batch tested to stay within 13% moisture max.' },
   { step: '04', title: 'Dual Inspection', detail: 'Manual and machine inspection before any packing begins.' },
   { step: '05', title: 'Sample Approval', detail: 'Buyer approves a physical sample before the bulk order proceeds.' },
 ];

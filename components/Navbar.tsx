@@ -52,22 +52,22 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-9">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-semibold text-slate-700 hover:text-emerald-900 transition-colors"
+                className="text-sm font-semibold text-slate-700 hover:text-emerald-900 transition-colors whitespace-nowrap"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-2">
             <a
               href={COMPANY.emailHref}
-              className="inline-flex items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2.5 text-sm font-medium text-emerald-950 hover:bg-emerald-950/5 transition-colors"
+              className="hidden xl:inline-flex items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2.5 text-sm font-medium text-emerald-950 hover:bg-emerald-950/5 transition-colors"
               aria-label="Email Indus Valley Foods"
             >
               <Mail className="h-4 w-4" strokeWidth={2} />
@@ -75,7 +75,7 @@ export default function Navbar() {
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800 transition-all duration-200"
+              className="inline-flex items-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800 transition-all duration-200 whitespace-nowrap"
             >
               Request a Quote
               <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
@@ -85,7 +85,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-emerald-950 hover:bg-emerald-950/5"
+            className="lg:hidden inline-flex items-center justify-center rounded-md p-2 text-emerald-950 hover:bg-emerald-950/5"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -99,7 +99,7 @@ export default function Navbar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-emerald-950/10 bg-white/95 backdrop-blur-md">
+        <div className="lg:hidden border-t border-emerald-950/10 bg-white/95 backdrop-blur-md">
           <div className="flex flex-col gap-1 px-4 py-4 sm:px-8">
             {NAV_LINKS.map((link) => (
               <a

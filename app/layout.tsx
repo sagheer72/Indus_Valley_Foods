@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     template: '%s | Indus Valley Foods',
   },
   description:
-    'Indus Valley Foods is a direct exporter of Sortex-cleaned Super Kernel & 1121 Basmati rice and verified Himalayan pink salt from Karachi, Pakistan, shipping worldwide — including UAE, Saudi Arabia, Qatar, Europe, Africa, Central Asia, and the Americas. FOB/CIF terms, bulk container supply, free samples via DHL/FedEx.',
+    'Indus Valley Foods is a direct exporter of Sortex-cleaned Super Kernel & 1121 Basmati rice and authentic Himalayan pink salt from Karachi, Pakistan, shipping worldwide — including UAE, Saudi Arabia, Qatar, Europe, Africa, Central Asia, and the Americas. FOB/CIF terms, bulk container supply, free samples via DHL/FedEx.',
   keywords: [
     'Pakistan rice exporter worldwide',
     'Basmati rice international export',
     'IRRI-9 Non-Basmati rice exporter Pakistan',
     'IRRI-9 long grain rice Gulf market',
     'Direct Basmati Rice Exporters from Pakistan to Dubai',
-    'Verified Pakistan Himalayan Pink Salt Suppliers Saudi Arabia',
+    'Authentic Pakistan Himalayan Pink Salt Suppliers Saudi Arabia',
     'Bulk Agro Commodities Exporter Pakistan',
     'Global agro commodities exporter Pakistan',
     'Indus Valley Foods Pakistan',
@@ -166,17 +166,9 @@ const localBusinessSchema = {
   telephone: '+92-312-3059907',
   email: 'indusvalleyfoods.pk@gmail.com',
   url: SITE_URL,
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '09:00',
-      closes: '19:00',
-    },
-  ],
-  // Once your Google Business Profile is live, replace this with your
-  // actual Maps share link, e.g. "https://maps.app.goo.gl/xxxxxxxx"
-  hasMap: 'https://www.google.com/maps/place/Karachi,+Pakistan',
+  // Add openingHoursSpecification and hasMap here once your Google
+  // Business Profile is live and your actual hours are confirmed —
+  // left out intentionally rather than guessed.
 };
 
 const productSchema = {

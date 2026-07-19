@@ -1,36 +1,56 @@
 import Image from 'next/image';
-import { CheckCircle, ArrowRight, Wheat, Gem } from 'lucide-react';
+import { CheckCircle, ArrowRight, Wheat, Gem, Package } from 'lucide-react';
 
 const riceVariantGroups = [
   {
     label: 'Basmati — Aromatic Long Grain',
-    items: ['Super Kernel Basmati', '1121 Basmati — Sella & Steam'],
+    items: ['Super Kernel Basmati (AGL 7.2–7.4mm)', '1121 Basmati — Sella & Steam'],
   },
   {
     label: 'Non-Basmati — Bulk Long Grain',
-    items: ['IRRI-9 Long Grain', 'IRRI-6 Long Grain'],
+    items: ['IRRI-9 Long Grain (AGL 6.0–6.2mm)', 'IRRI-6 Long Grain'],
   },
 ];
 
-const riceFeatures = [
-  '100% Sortex-cleaned, extra-long grain length (8.35mm+)',
-  'Strictly moisture-controlled, premium double-polished milling grade',
-  'IRRI-9 Non-Basmati available for high-volume bulk export orders',
-  'Packing from 2kg retail pouches to 50kg PP / Jute bags',
+const riceSpecs = [
+  { label: 'Broken %', value: '2–5% Max (per buyer requirement)' },
+  { label: 'Moisture', value: '13% Max' },
+  { label: 'Milling', value: 'Well-Milled, Double Polished, Sortex Cleaned' },
 ];
 
 const saltVarieties = [
-  'Fine Grain — Food Grade',
-  'Coarse Grain — Cooking',
-  'Cooking Blocks / Tiles',
-  '100% Organic Purity',
+  'Fine Powder',
+  'Coarse Granules',
+  'Lumps',
+  'Purity (NaCl) 98–99%',
 ];
 
-const saltFeatures = [
-  '100% organic, hand-mined, unrefined mineral composition',
-  'Rich in 84+ trace minerals, certified food-grade quality control',
-  'Retail pouches through heavy-duty bulk export bags',
+const saltSpecs = [
+  { label: 'Purity (NaCl)', value: '98% – 99%' },
+  { label: 'Color', value: 'Premium Light Pink / Dark Pink' },
+  { label: 'Forms', value: 'Coarse Granules, Fine Powder, Lumps' },
 ];
+
+const packagingOptions = [
+  { label: 'Available Sizes', value: '5kg, 10kg, 20kg, 25kg & 50kg' },
+  { label: 'Material Types', value: 'PP Bags, Jute Bags, Non-Woven / Cotton Bags' },
+  { label: 'Private Label', value: 'Custom brand printing available on request' },
+];
+
+function SpecList({ specs }: { specs: { label: string; value: string }[] }) {
+  return (
+    <div className="mt-5 space-y-2 border-t border-slate-100 pt-5">
+      {specs.map((spec) => (
+        <div key={spec.label} className="flex items-baseline justify-between gap-3 text-xs">
+          <span className="flex-shrink-0 font-semibold uppercase tracking-wide text-slate-500">
+            {spec.label}
+          </span>
+          <span className="text-right font-medium text-emerald-900">{spec.value}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export default function ProductShowcase() {
   return (
@@ -41,7 +61,7 @@ export default function ProductShowcase() {
             Our Commodities
           </span>
           <h2 className="mt-4 text-3xl font-serif font-bold text-emerald-950 sm:text-4xl lg:text-5xl">
-            Two Commodities. Uncompromising Export Standards.
+            Two Commodities. Export-Grade Specification.
           </h2>
           <p className="mt-4 text-sm text-slate-600 sm:text-base">
             Every shipment is Sortex-cleaned, moisture-controlled, and packed to
@@ -106,17 +126,7 @@ export default function ProductShowcase() {
                 </div>
               </div>
 
-              <ul className="mt-6 space-y-2.5 border-t border-slate-100 pt-6">
-                {riceFeatures.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
-                    <CheckCircle
-                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-700"
-                      strokeWidth={2}
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <SpecList specs={riceSpecs} />
 
               <a
                 href="#contact"
@@ -136,7 +146,7 @@ export default function ProductShowcase() {
             <div className="relative h-56 w-full overflow-hidden sm:h-64">
               <Image
                 src="https://images.unsplash.com/photo-1629285464605-8e6493153fdb?fm=jpg&q=80&w=1200&auto=format&fit=crop"
-                alt="Authentic Himalayan pink salt crystals from Pakistan, 100% organic and hand-mined for worldwide bulk export including Saudi Arabia and the Gulf"
+                alt="Authentic Himalayan pink salt crystals from Pakistan, hand-mined for worldwide bulk export including Saudi Arabia and the Gulf"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -154,11 +164,11 @@ export default function ProductShowcase() {
 
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <h3 className="text-2xl font-serif font-bold text-emerald-950 sm:text-3xl">
-                Verified Himalayan Pink Salt
+                Himalayan Pink Salt
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
                 Authentic, hand-mined Himalayan pink salt, pure and unrefined,
-                supplied as fine or coarse grain, or solid cooking blocks.
+                supplied as fine powder, coarse granules, or lumps.
               </p>
 
               <div className="mt-6 grid grid-cols-2 gap-3">
@@ -172,17 +182,7 @@ export default function ProductShowcase() {
                 ))}
               </div>
 
-              <ul className="mt-6 space-y-2.5 border-t border-slate-100 pt-6">
-                {saltFeatures.map((item) => (
-                  <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
-                    <CheckCircle
-                      className="mt-0.5 h-4 w-4 flex-shrink-0 text-amber-600"
-                      strokeWidth={2}
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <SpecList specs={saltSpecs} />
 
               <a
                 href="#contact"
@@ -196,6 +196,26 @@ export default function ProductShowcase() {
               </a>
             </div>
           </article>
+        </div>
+
+        {/* PACKAGING — applies to both products */}
+        <div className="mt-8 rounded-2xl border border-emerald-950/10 bg-white p-6 sm:p-8">
+          <div className="flex items-center gap-2.5">
+            <Package className="h-5 w-5 text-amber-600" strokeWidth={2} />
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-amber-600">
+              Packaging Options — Applies to Both Products
+            </p>
+          </div>
+          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {packagingOptions.map((item) => (
+              <div key={item.label} className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-emerald-800">
+                  {item.label}
+                </p>
+                <p className="mt-1.5 text-sm font-medium text-slate-700">{item.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

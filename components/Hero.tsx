@@ -29,7 +29,7 @@ export default function Hero() {
 
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-emerald-100/80 sm:text-lg lg:mx-0">
             Indus Valley Foods is a Karachi-based direct exporter supplying
-            internationally certified, Sortex-cleaned Basmati rice and pure
+            Sortex-cleaned Super Kernel Basmati rice and pure
             Himalayan pink salt to importers worldwide — including the UAE,
             Saudi Arabia, Europe, Africa, and beyond — on flexible FOB and CIF
             terms.
@@ -111,13 +111,13 @@ export default function Hero() {
                 <p className="text-[10px] uppercase tracking-wider text-emerald-200/60">
                   Moisture
                 </p>
-                <p className="mt-1 text-lg font-bold text-white">&lt; 12.5%</p>
+                <p className="mt-1 text-lg font-bold text-white">13% Max</p>
               </div>
               <div className="rounded-xl bg-white/5 p-4">
                 <p className="text-[10px] uppercase tracking-wider text-emerald-200/60">
-                  Grain Length
+                  Grain Length (AGL)
                 </p>
-                <p className="mt-1 text-lg font-bold text-white">8.35mm+</p>
+                <p className="mt-1 text-lg font-bold text-white">7.2–7.4mm</p>
               </div>
             </div>
 

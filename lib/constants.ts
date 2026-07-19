@@ -5,7 +5,7 @@ export const COMPANY = {
   name: 'Indus Valley Foods',
   owner: 'Sagheer Ahmed',
   location: 'Karachi, Pakistan',
-  locationDetail: 'Shipping & Corporate Operations Hub — Karachi Port, Pakistan',
+  locationDetail: 'Sourced & Shipped from Karachi, Pakistan',
   phoneDisplay: '+92 312 3059907',
   phoneHref: 'tel:+923123059907',
   whatsappNumber: '923123059907',
@@ -25,8 +25,8 @@ export const COMPANY = {
 export const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Products', href: '#products' },
-  { label: 'Export Process', href: '#process' },
-  { label: 'Quality', href: '#quality' },
+  { label: 'About', href: '#about' },
+  { label: 'Process', href: '#process' },
   { label: 'Catalog', href: '/catalog' },
   { label: 'Contact', href: '#contact' },
 ];
