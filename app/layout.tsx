@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   keywords: [
     'Pakistan rice exporter worldwide',
     'Basmati rice international export',
+    'IRRI-9 Non-Basmati rice exporter Pakistan',
+    'IRRI-9 long grain rice Gulf market',
     'Direct Basmati Rice Exporters from Pakistan to Dubai',
     'Verified Pakistan Himalayan Pink Salt Suppliers Saudi Arabia',
     'Bulk Agro Commodities Exporter Pakistan',
@@ -193,6 +195,15 @@ const productSchema = {
     {
       '@type': 'Product',
       position: 2,
+      name: 'IRRI-9 Non-Basmati Long Grain Rice',
+      description:
+        'High-volume bulk export quality IRRI-9 Non-Basmati long grain rice from Pakistan, Sortex-cleaned and moisture-controlled.',
+      brand: { '@type': 'Brand', name: 'Indus Valley Foods' },
+      countryOfOrigin: 'PK',
+    },
+    {
+      '@type': 'Product',
+      position: 3,
       name: 'Himalayan Pink Salt',
       description:
         'Hand-mined, unrefined Himalayan pink salt in fine powder, granule, and cooking block form, exported from Pakistan.',

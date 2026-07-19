@@ -97,6 +97,10 @@ export default function CatalogPage() {
                   <span className="text-xs font-mono text-emerald-700">QUICK-COOK</span>
                 </div>
                 <div className="flex items-center justify-between py-3.5">
+                  <span className="text-sm font-medium text-slate-800">IRRI-9 Non-Basmati</span>
+                  <span className="text-xs font-mono text-emerald-700">HIGH-VOLUME BULK EXPORT</span>
+                </div>
+                <div className="flex items-center justify-between py-3.5">
                   <span className="text-sm font-medium text-slate-800">IRRI-6 / PK-385</span>
                   <span className="text-xs font-mono text-emerald-700">COMMERCIAL LONG GRAIN</span>
                 </div>

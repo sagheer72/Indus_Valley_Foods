@@ -1,16 +1,21 @@
 import Image from 'next/image';
 import { CheckCircle, ArrowRight, Wheat, Gem } from 'lucide-react';
 
-const riceVarieties = [
-  'Super Kernel Basmati',
-  '1121 Basmati — Sella & Steam',
-  'IRRI-6 Long Grain',
-  'Double Polished, Well-Cleaned',
+const riceVariantGroups = [
+  {
+    label: 'Basmati — Aromatic Long Grain',
+    items: ['Super Kernel Basmati', '1121 Basmati — Sella & Steam'],
+  },
+  {
+    label: 'Non-Basmati — Bulk Long Grain',
+    items: ['IRRI-9 Long Grain', 'IRRI-6 Long Grain'],
+  },
 ];
 
 const riceFeatures = [
   '100% Sortex-cleaned, extra-long grain length (8.35mm+)',
   'Strictly moisture-controlled, premium double-polished milling grade',
+  'IRRI-9 Non-Basmati available for high-volume bulk export orders',
   'Packing from 2kg retail pouches to 50kg PP / Jute bags',
 ];
 
@@ -50,7 +55,7 @@ export default function ProductShowcase() {
             <div className="relative h-56 w-full overflow-hidden sm:h-64">
               <Image
                 src="https://images.unsplash.com/photo-1586201375761-83865001e31c?fm=jpg&q=80&w=1200&auto=format&fit=crop"
-                alt="Premium long-grain Super Kernel and 1121 Basmati rice from Pakistan, Sortex-cleaned for worldwide bulk export including Dubai and Gulf markets"
+                alt="Premium Super Kernel Basmati and IRRI-9 Non-Basmati long grain rice from Pakistan, Sortex-cleaned for worldwide bulk export including Dubai and Gulf markets"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -68,23 +73,37 @@ export default function ProductShowcase() {
 
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <h3 className="text-2xl font-serif font-bold text-emerald-950 sm:text-3xl">
-                Premium Pakistani Basmati Rice
+                Premium Pakistani Rice
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600">
-                Sortex-cleaned Super Kernel and 1121 Basmati, plus IRRI-6 long
-                grain, milled to strict export specification for global food
-                procurement teams worldwide.
+                Sortex-cleaned Basmati and IRRI Non-Basmati long grain, milled
+                to strict export specification for global food procurement
+                teams worldwide.
               </p>
 
-              <div className="mt-6 grid grid-cols-2 gap-3">
-                {riceVarieties.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-lg border border-slate-100 bg-slate-50 px-3 py-2.5"
-                  >
-                    <p className="text-xs font-semibold text-emerald-950">{item}</p>
-                  </div>
-                ))}
+              <div className="mt-6">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-amber-600">
+                  Variants Offered
+                </p>
+                <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {riceVariantGroups.map((group) => (
+                    <div
+                      key={group.label}
+                      className="rounded-lg border border-slate-100 bg-slate-50 p-3.5"
+                    >
+                      <p className="text-[11px] font-semibold uppercase tracking-wide text-emerald-800">
+                        {group.label}
+                      </p>
+                      <ul className="mt-2 space-y-1">
+                        {group.items.map((item) => (
+                          <li key={item} className="text-xs font-medium text-slate-700">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <ul className="mt-6 space-y-2.5 border-t border-slate-100 pt-6">
