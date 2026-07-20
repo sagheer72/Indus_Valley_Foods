@@ -74,7 +74,7 @@ export default function ProductShowcase() {
           <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-emerald-950/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="relative h-56 w-full overflow-hidden sm:h-64">
               <Image
-                src="https://images.unsplash.com/photo-1586201375761-83865001e31c?fm=jpg&q=80&w=1200&auto=format&fit=crop"
+                src="https://images.pexels.com/photos/18328392/pexels-photo-18328392.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt="Premium Super Kernel Basmati and IRRI-9 Non-Basmati long grain rice from Pakistan, Sortex-cleaned for worldwide bulk export including Dubai and Gulf markets"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -145,7 +145,7 @@ export default function ProductShowcase() {
           <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-emerald-950/10 bg-white shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="relative h-56 w-full overflow-hidden sm:h-64">
               <Image
-                src="https://images.unsplash.com/photo-1629285464605-8e6493153fdb?fm=jpg&q=80&w=1200&auto=format&fit=crop"
+                src="https://images.pexels.com/photos/7779878/pexels-photo-7779878.jpeg?auto=compress&cs=tinysrgb&w=1600"
                 alt="Authentic Himalayan pink salt crystals from Pakistan, hand-mined for worldwide bulk export including Saudi Arabia and the Gulf"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
