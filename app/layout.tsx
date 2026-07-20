@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const displayFont = Cormorant_Garamond({
@@ -232,6 +233,20 @@ export default function RootLayout({
       </head>
       <body className="bg-slate-50 font-sans text-slate-900 antialiased">
         {children}
+
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JWTNE366DJ"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JWTNE366DJ');
+          `}
+        </Script>
       </body>
     </html>
   );
