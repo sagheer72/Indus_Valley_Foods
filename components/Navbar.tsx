@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Mail, ArrowRight } from 'lucide-react';
-import { COMPANY, NAV_LINKS } from '@/lib/constants';
+import { Menu, X, Phone, Mail, ArrowRight, Globe } from 'lucide-react';
+import { COMPANY } from '@/lib/constants';
+import { useLanguage } from '@/lib/LanguageContext';
 
 function GrainIcon() {
   return (
@@ -39,6 +40,16 @@ function GrainIcon() {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { locale, setLocale, t } = useLanguage();
+
+  const navLinks = [
+    { label: t.nav.home, href: '#home' },
+    { label: t.nav.products, href: '#products' },
+    { label: t.nav.about, href: '#about' },
+    { label: t.nav.process, href: '#process' },
+    { label: t.nav.catalog, href: '/catalog' },
+    { label: t.nav.contact, href: '#contact' },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/85 border-b border-emerald-950/10">
@@ -53,7 +64,7 @@ export default function Navbar() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -65,19 +76,28 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setLocale(locale === 'en' ? 'ar' : 'en')}
+              className="inline-flex items-center gap-1.5 rounded-full border border-emerald-950/15 px-3.5 py-2.5 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 transition-colors"
+              aria-label="Switch language"
+            >
+              <Globe className="h-4 w-4" strokeWidth={2} />
+              {locale === 'en' ? 'العربية' : 'English'}
+            </button>
             <a
               href={COMPANY.emailHref}
               className="hidden xl:inline-flex items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2.5 text-sm font-medium text-emerald-950 hover:bg-emerald-950/5 transition-colors"
               aria-label="Email Indus Valley Foods"
             >
               <Mail className="h-4 w-4" strokeWidth={2} />
-              Email
+              {t.nav.email}
             </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-full bg-emerald-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-800 transition-all duration-200 whitespace-nowrap"
             >
-              Request a Quote
+              {t.nav.quote}
               <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
             </a>
           </div>
@@ -101,7 +121,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-emerald-950/10 bg-white/95 backdrop-blur-md">
           <div className="flex flex-col gap-1 px-4 py-4 sm:px-8">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -112,13 +132,22 @@ export default function Navbar() {
               </a>
             ))}
 
+            <button
+              type="button"
+              onClick={() => setLocale(locale === 'en' ? 'ar' : 'en')}
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full border border-emerald-950/15 px-5 py-3 text-sm font-semibold text-emerald-950"
+            >
+              <Globe className="h-4 w-4" strokeWidth={2} />
+              {locale === 'en' ? 'العربية (Switch to Arabic)' : 'English (التبديل إلى الإنجليزية)'}
+            </button>
+
             <div className="mt-3 flex flex-col gap-3 border-t border-emerald-950/10 pt-4">
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-900 px-5 py-3.5 text-sm font-semibold text-white active:scale-[0.98] transition-transform"
               >
-                Request a Quote
+                {t.nav.quote}
                 <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
               </a>
               <a
@@ -126,7 +155,7 @@ export default function Navbar() {
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-950/20 px-5 py-3.5 text-sm font-semibold text-emerald-950 active:scale-[0.98] transition-transform"
               >
                 <Mail className="h-4 w-4" strokeWidth={2} />
-                Email Us
+                {t.nav.email}
               </a>
             </div>
           </div>

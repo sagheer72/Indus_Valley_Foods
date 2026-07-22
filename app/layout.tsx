@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import Script from 'next/script';
+import Providers from '@/components/Providers';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import './globals.css';
 
 const displayFont = Cormorant_Garamond({
@@ -232,7 +234,10 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-slate-50 font-sans text-slate-900 antialiased">
-        {children}
+        <Providers>
+          {children}
+          <FloatingWhatsApp />
+        </Providers>
 
         {/* Google Analytics 4 */}
         <Script

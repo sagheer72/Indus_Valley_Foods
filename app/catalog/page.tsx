@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Ship, CreditCard, Truck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Download, Ship, CreditCard, Truck } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { COMPANY } from '@/lib/constants';
@@ -65,6 +65,15 @@ export default function CatalogPage() {
             Full specifications for every product line offered by {COMPANY.name},
             Karachi. Shipped on FOB or CIF terms with free physical samples on request.
           </p>
+
+          <a
+            href="/Indus-Valley-Foods-Catalog.pdf"
+            download
+            className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 px-6 py-3.5 text-sm font-semibold text-emerald-950 hover:bg-amber-600 active:scale-[0.98] transition-all duration-200"
+          >
+            <Download className="h-4 w-4" strokeWidth={2.5} />
+            Download Catalog (PDF)
+          </a>
         </div>
       </section>
 

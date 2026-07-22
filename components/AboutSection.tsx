@@ -1,53 +1,31 @@
-import { Target, Handshake, Sprout } from 'lucide-react';
-import { COMPANY } from '@/lib/constants';
+'use client';
 
-const pillars = [
-  {
-    icon: Sprout,
-    title: 'Sourced Directly',
-    detail:
-      'Rice and Himalayan pink salt sourced directly from Karachi-based mills and the Salt Range, keeping the supply chain short and quality traceable.',
-  },
-  {
-    icon: Target,
-    title: 'Founder-Led',
-    detail:
-      `Run personally by ${COMPANY.owner} — every inquiry, sample, and shipment is handled directly, with no middlemen between you and the source.`,
-  },
-  {
-    icon: Handshake,
-    title: 'Built on Long-Term Trade',
-    detail:
-      'Focused on transparent pricing, sample-first verification, and consistent quality — the fundamentals of a trade relationship worth repeating.',
-  },
-];
+import { Target, Handshake, Sprout } from 'lucide-react';
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function AboutSection() {
+  const { t } = useLanguage();
+  const a = t.about;
+
+  const pillars = [
+    { icon: Sprout, title: a.pillar1Title, detail: a.pillar1Detail },
+    { icon: Target, title: a.pillar2Title, detail: a.pillar2Detail },
+    { icon: Handshake, title: a.pillar3Title, detail: a.pillar3Detail },
+  ];
+
   return (
     <section id="about" className="bg-white py-16 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <span className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-600">
-              About Us
+              {a.eyebrow}
             </span>
             <h2 className="mt-4 text-3xl font-serif font-bold text-emerald-950 sm:text-4xl">
-              A Direct Line from Karachi to Your Warehouse
+              {a.heading}
             </h2>
-            <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">
-              {COMPANY.name} was founded to connect Pakistan&apos;s rice mills
-              and salt mines directly with buyers abroad — without layers of
-              brokers in between. We work with Super Kernel Basmati, IRRI-9
-              Non-Basmati, and Himalayan pink salt, sourced from Karachi and
-              the Salt Range, and shipped on terms that make sense for both
-              sides of the trade.
-            </p>
-            <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
-              As a founder-led export business, every buyer gets direct
-              access to {COMPANY.owner} — no call centers, no account
-              managers passing your inquiry along. Just a straight line to
-              the person closing your deal.
-            </p>
+            <p className="mt-5 text-sm leading-relaxed text-slate-600 sm:text-base">{a.para1}</p>
+            <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">{a.para2}</p>
           </div>
 
           <div className="flex flex-col gap-5">
