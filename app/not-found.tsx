@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
-import { COMPANY } from '@/lib/constants';
 
 export default function NotFound() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-center bg-emerald-950 px-6 text-center">
       <span className="text-xs font-medium uppercase tracking-[0.24em] text-amber-400">
-        {COMPANY.name}
+        Indus Valley Foods
       </span>
       <h1 className="mt-6 text-6xl font-serif font-bold text-white sm:text-7xl">404</h1>
       <p className="mt-4 max-w-sm text-sm text-emerald-100/70 sm:text-base">

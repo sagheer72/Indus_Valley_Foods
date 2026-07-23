@@ -214,7 +214,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
+    <html lang="en" dir="ltr" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <head>
         <meta name="geo.region" content="PK-SD" />
         <meta name="geo.placename" content="Karachi, Pakistan" />
